@@ -4,9 +4,9 @@
 #include "version.h"
 
 #define L0 0 // default layer
-#define L1 1
-#define L2 2
-#define L3 3
+#define L1 1 // media keys, movement
+#define L2 2 // numpad, layer select
+#define L3 3 // fortnite lol
 
 enum custom_keycodes {
   PLACEHOLDER = SAFE_RANGE, // can always be here
