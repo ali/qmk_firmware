@@ -3,16 +3,12 @@
 #define BL 0
 #define FN 1
 
-// rgblight config
-#define RGBLIGHT_SLEEP 1
-
 // Use space cadet shift
 #define AU_LSFT KC_LSPO
 #define AU_RSFT KC_RSPC
 
 // Layer-tap toggle for Fn key
 #define AU_FN TT(FN)
-#define TAPPING_TOGGLE 1
 
 /*
  * Ali's Custom Tokyo60 Layout

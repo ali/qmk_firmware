@@ -1,3 +1,4 @@
 #pragma once
 
-// place overrides here
+#define RGBLIGHT_SLEEP 1
+#define TAPPING_TOGGLE 1
