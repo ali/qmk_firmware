@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |--------+------+------+------+------+------|  L1  |           |  L1  |------+------+------+------+------+--------|
    * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  | RShift |
    * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
-   *   | Caps |   `  | Ctrl | LAlt |  L⌘  |                                       |  R⌘  | RAlt | Meh  | Hyper|  L1  |
+   *   | Caps |   `  | Ctrl | LAlt |  L⌘  |                                       |  R⌘  | RAlt |  ⌃⌥  | ⌃⌥⌘  |  L1  |
    *   `----------------------------------'                                       `----------------------------------'
    *                                        ,-------------.       ,-------------.
    *                                        |  L⌘  | LAlt |       | Ctrl |  R⌘  |
@@ -47,14 +47,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                               KC_BSPC, KC_DEL,  KC_END,
 
     // Right hand
-    TG(1),   KC_6,     KC_7,    KC_8,    KC_9,         KC_0,          KC_MINS,
-    KC_RBRC, KC_Y,     KC_U,    KC_I,    KC_O,         KC_P,          KC_BSLS,
-             KC_H,     KC_J,    KC_K,    KC_L,         KC_SCLN,       KC_QUOT,
-    MO(1),   KC_N,     KC_M,    KC_COMM, KC_DOT,       KC_SLSH,       KC_RSPC,
-                       KC_RCMD, KC_RALT, MEH_T(KC_NO), HYPR_T(KC_NO), TT(1),
-             KC_RCTRL, KC_RCMD,
-             KC_PGUP,
-             KC_PGDN,  KC_ENT, KC_SPC
+    HYPR_T(KC_NO), KC_6,     KC_7,    KC_8,    KC_9,         KC_0,          KC_MINS,
+    KC_RBRC,       KC_Y,     KC_U,    KC_I,    KC_O,         KC_P,          KC_BSLS,
+                   KC_H,     KC_J,    KC_K,    KC_L,         KC_SCLN,       KC_QUOT,
+    MO(1),         KC_N,     KC_M,    KC_COMM, KC_DOT,       KC_SLSH,       KC_RSPC,
+                             KC_RCMD, KC_RALT, LCA_T(KC_NO), RCAG_T(KC_NO), TT(1),
+                   KC_RCTRL, KC_RCMD,
+                   KC_PGUP,
+                   KC_PGDN,  KC_ENT, KC_SPC
   ),
   /* Keymap 1: Media and movement
    *
