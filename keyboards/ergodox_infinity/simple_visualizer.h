@@ -57,7 +57,7 @@ static keyframe_animation_t color_animation = {
     // Note that there's a 200 ms no-operation frame,
     // this prevents the color from changing when activating the layer
     // momentarily
-    .frame_lengths = {gfxMillisecondsToTicks(200), gfxMillisecondsToTicks(500)},
+    .frame_lengths = {gfxMillisecondsToTicks(200), gfxMillisecondsToTicks(20)},
     .frame_functions = {keyframe_no_operation, lcd_backlight_keyframe_animate_color},
 };
 
